@@ -202,6 +202,10 @@ int main()
           }
         }
         
+        for (int i = 0; i < 4; i++) {
+        	lcd.setCursor(i,1);
+          	lcd.write(randomNiz[i]);
+        }
         if(tacno == 4) {
             lcd.setCursor(6, 1);
         	lcd.print("tacno");
@@ -211,6 +215,8 @@ int main()
         }
         _delay_ms(1000);
         
+        
+        _delay_ms(1000);
         lcd.clear();
         
         lcd.print("Ponovo *");
